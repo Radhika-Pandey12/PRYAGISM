@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Lateef&family=Lovers+Quarrel&family=Satisfy&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Lovers+Quarrel&family=Satisfy&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+<title>Prayagism</title>
+  </head>
+  <style>
+   .navbar-brand {
+    font-family: 'Homemade Apple', cursive;
+    transform: rotate(-7deg);
+    padding-bottom:0px;
+    margin-right: 0rem;
+     }
+      .navbar-nav{
+          padding-top: 1px;
+      }
+      .navbar{
+          min-height: 30px;
+      }
+      .navbar-toggler{
+          margin-top: 15px;
+      }
+      
+        .nav-link{
+            font-size: 18px;
+            margin-left: 20px;
+            margin-right: 50px;
+            font-family: 'Montserrat Subrayada', sans-serif;
+            }
+        
+           
+        .navbar-light .navbar-nav .active > .nav-link{
+          color: #5e3311;
+          transition: 0.3s;
+        }     
+        .navbar-light .navbar-nav .active > .nav-link:hover{
+          color: #ffc60b;
+        }
+        .navbar-light .navbar-nav .nav-link.active{
+          color: #5e3311;
+          transition: 0.3s;
+        }
+        .navbar-light .navbar-nav .nav-link.active:hover{
+          color: #ffc60b;
+        }
+        #logo{
+            font-family: 'Homemade Apple', cursive;
+            transform: rotate(-5deg);
+            text-decoration: none;
+            font-size: 90px;
+            padding-bottom: -590px;
+            padding-top: 5px;
+           color: #baa91e;
+        }
+        .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: lighter;
+    color: #ffc60b;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+        .all{
+           background-image: url(pp1.svg);
+           background-repeat: no-repeat;
+           width: 100%;
+           height: 600px;
+           background-size: cover;
+           background-attachment: fixed;
+           clip-path: polygon(0% 0%,100% 0%,100% 80%,50% 100%,0% 80%);
+           align-items: center;
+           display: flex;
+            }
+         .allahabad{
+           position: relative;
+           max-width: 650px;
+           padding-left: 30px;
+           padding-right: 10px;
+           background-color: rgb(255, 255, 255);
+           left: 4%;
+           margin-right: 70px;
+         }
+          
+         .mapmain{
+           margin-top: 200px;
+           margin-bottom: 200px;
+           margin-left: 45px;
+           margin-right: 45px;
+           position: relative;
+         }
+       
+         .map{
+           transform: rotate(-60deg);
+          height: 750px;
+           position: absolute;
+           left: 5%;
+           top: -30px;
+         }
+         @media (max-width: 600px){
+          .map{
+           transform: rotate(-60deg);
+          height: 550px;
+           position: absolute;
+           left: 5%;
+           top: -30px;
+           
+         }
+         }
+         .map2{
+           top: 5%;
+          position: absolute;
+           max-width: 650px;
+           padding-top: 60px;
+           padding-left: 30px;
+           padding-right: 10px;
+           padding-bottom: 50px;
+           background-color: rgb(255, 255, 255,0.4);
+           box-shadow: 50px 50px #ffc60b;
+           left: 0;
+           margin-right: 40px;
+         }
+         .hello{
+           font-family: 'Satisfy', cursive; 
+           font-size: 95px;
+         }
+         .map3{
+          font-family: "'Tajawal', sans-serif;"
+         }
+         .sangammain{
+           margin-top: 10%;
+         }
+          
+         .sangam{
+           align-self: center;
+           justify-content: center;
+           display: flex;
+           font-family: 'Lateef', cursive; 
+           font-size: 30px;
+           max-width: 800px;
+           margin-top: 150px;
+           box-shadow: -35px 40px #ff8b00;
+           position: relative;
+           margin-top: 790px;
+          padding-right: 15%;
+          max-height: 300px;
+          margin-bottom: 9%;
+               }
+         
+          .explore{
+          background-image: url(sangam2.jpg),linear-gradient(to top,#6e412c,#af8c66,#c5a78b,#d8bfa9,#e0cab4,#ffffff);
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 850px;
+          background-size: cover;
+          background-attachment: scroll;
+          clip-path: polygon(0% 0%,100% 0%,99.90% 91.06%,50% 100%,0% 91.06%);
+          background-blend-mode: multiply;
+          display: flex;
+          position: relative;
+          margin-top: 15%;
+          overflow: hidden;
+        }
+       .image{
+         display: grid;
+         grid-template-columns: 320px 300px 350px;
+         grid-template-rows:200px 300px ;
+         row-gap: 10px;
+         column-gap: 10px;
+         justify-content: center;
+         align-content: center;
+         position: absolute;
+         top: 10%;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         margin-left: 74px;
+         margin-right: 10px;
+       }
+       
+       .div3{
+         grid-row: 2/3;
+         grid-column: 2/2;
+       }
+       .allexplore{
+         display: grid;
+         margin-left: 50px;
+         margin-right: 50px;
+         justify-content: center;
+         position: absolute;
+         margin-left: 18%;
+         top: 25%;
+         align-content: center;
+        }     
+        .explore11{
+          position: relative;
+        }
+        .explore2{
+          background-image: url(top.jpg);
+           background-repeat: no-repeat;
+           width: 100%;
+           height: 850px;
+           background-size: cover;
+           background-attachment:fixed;
+           clip-path:polygon(0.00% 16.82%, 100% 0%, 100% 80%, 0% 56.35%);
+           display: flex;
+          position: absolute;
+          top: -72px;
+          justify-content: right;
+          }
+         
+          .kumbh{
+            background-color:#f5c730;
+            padding: 15px;
+             max-width: 650px;
+            left: 52%;
+            position: absolute;
+            top: 29%;
+            color: orangered;
+            margin-right: 35px;
+            box-shadow: 30px 30px whitesmoke;
+          }
+          .kumbhsukriti{
+            font-size: 4.3vw;
+            padding-top: 5px;
+            bottom: 14%;
+            position: relative;
+          }
+          .parakumbh{
+            font-size: 1.2vw;
+            font-weight: 600;
+          }
+          .shape1{
+            position: relative;
+            margin-right: 15px;
+            margin-top: 45px;
+          }
+          .shape01{
+            background-color: #ffb920;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            left: 81%;
+          }
+          .shape02{
+            background-color: #fce067;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            left: 75%;
+          }
+          .shape03{
+            background-color: #e9c757;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            left: 85%;
+            
+          }
+           
+   @media(max-width: 1000px)
+   {
+    .shape1{
+            position: relative;
+            margin-right: 170px;
+            margin-top: 45px;
+          }
+   }
+   @media (max-width:  400px){
+          	.shape01{
+            background-color: #ffb920;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+            left: 122%;
+            margin-right: 70px;
+            
+          }
+          }
+          @media (max-width:  400px){
+          
+          .shape02{
+           background-color: #fce067;
+           width: 70px;
+           height: 70px;
+           border-radius: 50%;
+           position: absolute;
+           left: 105%;
+         }
+         }
+         @media (max-width: 400px){
+          	.shape03{
+            background-color: #e9c757;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            position: absolute;
+            left: 105%;
+            top: -4%;
+          }
+          }
+          .shape2{
+            position: relative;
+          }
+          .shape21{
+            background-color: rgba(248, 245, 77, 0.5);
+            height: 588px;
+            width: 373px;
+            position: absolute;
+            top: -472px;
+
+          }
+          .shape22{
+            background-color: rgb(255, 253, 115);
+            height: 261px;
+            width: 173px;
+            position: absolute;
+            top: -472px;
+          }
+          .shape3{
+            position: relative;
+            margin-left: 40px;
+          }
+          .shape31{
+            background-color: #ffda5f;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+    top: 600px;
+          }
+          .shape32{
+            background-color: #ffc60b;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    top: 572px;
+          }
+          .hfact{
+            font-size: 45px;
+            margin-bottom: 30px;
+          }
+          .facts{
+            margin-top: 665px;
+            margin-bottom: 20px;
+    
+            text-align: center;
+            position: relative;
+          }
+          .hfact{
+            margin-top: 10px;
+            padding-bottom: 40px;
+            font-family: 'Satisfy', cursive;
+          }
+          .img-responsive{
+            max-width: 100%;
+            max-height: 100%;
+      
+          }
+          .http{
+          font-family:monospace ;
+          font-size: small;
+          color: #c29500;
+          }
+          .http:hover{
+          font-family:monospace ;
+          text-decoration: none;
+          font-size: 1vw;
+          color: #f7ca36;
+          }
+          .form-controls{
+            position: relative;
+            width: 100%;
+            padding-right: 25px;
+            padding-left: 25px;
+            border-right: 0;
+            border-top: 0;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-left: 3px solid #ffb920;
+            display: block;
+            background-color: #7c5e1d;
+          }
+          .contactform{
+            margin-left: 50px;
+            justify-content: center;
+            display: grid;
+            margin-right: 50px;
+            padding-top: 90px;
+            padding-bottom: 20px;
+          }
+          .trans[type=text]{
+            height: 100px;
+            resize: vertical;
+            margin-top: 10px;
+          }
+          .contact{
+            background-color: #7c5e1d;
+            clip-path: polygon(0% 20%, 50% 0%, 100% 20%, 100% 100%, 0% 100%);
+            padding-bottom: 10px;
+          }
+          
+          .form-controls:focus{
+	         width: 100%;
+	          border-bottom-color: 3px solid #ffb920;
+	        animation: trans 1s ease;
+}
+       
+       @keyframes trans{
+       	0%{
+       		width: 0%;
+               
+       		border-bottom-color: #ffb920;
+       	}
+
+       	50%{
+       		width: 100%;
+              
+       		border-bottom-color: #ffb920;
+       	}
+       }
+       label{
+        display: inline-block;
+        margin-bottom: 0;
+        font-size: 20px;
+        color: wheat;
+        font-family: 'Times New Roman', Times, serif;
+        }
+        .icon{
+            margin-left: 20px;
+            border-radius: 100px;
+            margin-top: 30px;
+          }
+          .icon:before{
+            border-radius: 150px;
+            background-color:  #ff33cc;
+            transition: 0.5s;
+            transform: scale(0.9);
+            z-index: -1;
+          }
+          .icon:hover:before{
+           transform: scale(1.1);
+           box-shadow: 0 0 15px  #f56f21;
+          }
+          .icon:hover{
+          color:  #f56f21;
+          box-shadow: 0 0 15px #f56f21;
+          text-shadow: 0 0 15px #f56f21 ;
+          }
+
+          .icons1{
+            margin-left: 40px;
+            border-radius: 100px;
+            margin-top: 30px;
+          }
+          .icons1:before{
+            border-radius: 150px;
+            background-color:rgb(255, 199, 45) ;
+            transition: 0.5s;
+            transform: scale(0.9);
+            z-index: -1;
+          }
+          .icons1:hover:before{
+           transform: scale(1.1);
+           box-shadow: 0 0 15px rgb(255, 199, 45);
+          }
+          .icons1:hover{
+          color: rgb(255, 199, 45);
+          box-shadow: 0 0 15px rgb(255, 199, 45);
+          text-shadow: 0 0 15px rgb(255, 199, 45);
+          }
+
+          .icons2{
+            margin-left: 30px;
+            border-radius: 100px;
+            margin-top: 30px;
+          }
+          .icons2:before{
+            border-radius: 150px;
+            background-color:rgb(250, 181, 90) ;
+            transition: 0.5s;
+            transform: scale(0.9);
+            z-index: -1;
+          }
+          .icons2:hover:before{
+           transform: scale(1.1);
+           box-shadow: 0 0 15px rgb(250, 181, 90);
+          }
+          .icons2:hover{
+          color: rgb(250, 181, 90);
+          box-shadow: 0 0 15px rgb(250, 181, 90);
+          text-shadow: 0 0 15px rgb(250, 181, 90);
+          }
+
+          .icons3{
+            margin-left: 30px;
+            border-radius: 100px;
+            margin-top: 30px;
+            
+          }
+          .icons3:before{
+            border-radius: 150px;
+            background-color:rgb(233, 230, 36) ;
+            transition: 0.5s;
+            transform: scale(0.9);
+            z-index: -1;
+          }
+          .icons3:hover:before{
+           transform: scale(1.1);
+           box-shadow: 0 0 15px rgb(233, 230, 36);
+          }
+          .icons3:hover{
+          color: rgb(233, 230, 36);
+          box-shadow: 0 0 15px rgb(233, 230, 36);
+          text-shadow: 0 0 15px rgb(233, 230, 36);
+          }
+         .footer{
+           margin-top: 20px;
+         }
+         :focus {
+    outline: none;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color:NONE;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: none;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: NONE;
+    border-image: initial;
+}
+          </style>
+  <nav class="navbar navbar-light" style="text-align: center; justify-content: center;" >
+    <a class="navbar-brand" href="#" style="font-size: 26px;">Prayagism</a>
+  </nav>
+  
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"  id="text"  >Home <span class="sr-only"></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" id="text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Explore
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="shopping.html">Shopping</a>
+            <a class="dropdown-item" href="tourist.html">Tourist place</a>
+            <a class="dropdown-item" href="hotel.html">Hotel</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#" id="text" >Blog</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about_us.html" id="text">About us</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </nav>
+<body>
+     <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   <!--static corousel-->
+   <div class="all">
+    <div class="allahabad">
+   <h1 style="font-family: 'Barlow Condensed', sans-serif;">Prayagraj</h1>
+   <p><i>{pra-yaga-raj}  ~  noun</i></p>
+   <p style="font-family: 'Tajawal', sans-serif;">The city plays an iconic role both in Indian history and Hindu mythology. Along with that, Prayagraj is a humble abode with places where you can eat to your heart’s content.</p>
+   </div>
+  </div>
+
+  <!--shape-->
+  <div class="shape1">
+    <div class="shape01"></div>
+    <div class="shape02"></div>
+    <div class="shape03"></div>
+  </div>
+<!--map-->
+  <div class="mapmain">
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="map-1.png" class="map img-fluid">
+      </div>
+      <div class="col-sm-6 map1">
+        <div class="map2">
+          <h1 class="hello">Hello there!!</h1>
+        <p class="map3">Allahabad, officially known as Prayagraj, and also known as Ilahabad and Prayag, is a metropolis in the Indian state of Uttar Pradesh.Allahabad lies close to Triveni Sangam, the "three-river confluence" of the Ganges, Yamuna and Sarasvati rivers.[1] It plays a central role in Hindu scriptures.</p>
+      </div>
+    </div>
+    </div>
+   </div>
+   <!--shape2-->
+   
+   <!--carouseltext-->
+   <div class="sangammain">
+   <div class="sangam container" >
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" style="justify-content: center; align-items: center;" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h3>‘Sangam’ or river confluence is the point where two Indian holy rivers i.e. the Yamuna and the Ganges meet a mythological river of Hinduism called the Saraswati.As a matter of fact, Sangam looks spectacular regardless of the time you visit it. </h3>
+        </div>
+        <div class="carousel-item">
+          <h3>A visit to Khusru Bagh must find a place on your list of things to do in Allahabad. Having three notable Mughal tombs, Khusru Bagh is surrounded by massive walls. One of the tombs is of the first son of Jehangir, Prince Khusru.</h3>
+        </div>
+        <div class="carousel-item">
+          <h3>Being one of the things Allahabad is famous for, the Kumbh Mela is a Hindu pilgrimage in which pilgrims gather to bathe in the holy river. The Ardh Kumbh Mela takes place every 6 years, drawing interest from people around the world.</h3>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="shape2">
+  <div class="shape21"></div>
+  <div class="shape22"></div>
+  <div class="shape23"></div>
+
+</div>
+<div class="margine">
+<div class="explore ">
+  <div class="allexplore">
+    <div class="image">
+      <img src="kumbh1.jpg" class="div1   classdiv " width="320px" height="400px">
+      <img src="sadhubaba1.jpg" class="div2  classdiv img-fluid img-responsive" width="300px" height="200px">
+      <img src="shopping1.jpg" alt="" class="div3  classdiv img-fluid img-responsive" width="300px" height="200px">
+      <img src="monuments5.jpg" class="div4 classdiv "width="350px" height="400px" >
+    </div>
+  </div>
+</div>
+</div>
+<div class="shape3">
+  <div class="shape31"></div>
+  <div class="shape32"></div>
+  
+
+</div>
+<div class="explore11">
+<div class="explore2">
+  <div class="kumbh">
+    <h1 style="font-family:'Satisfy', cursive;" class="kumbhsukriti">kumbh Sukrit</h1>
+    <p style="font-family: 'Tajawal', sans-serif;" class="parakumbh"> ‘Kumbh’—its legacy is as impactful as its name. There could not be a more grandiose display of the religious faith and sentiments of Hindus than this, where multitudes of believers gather to bathe in the holy river, for a span of 50 days. </p>
+    </p>
+  </div>
+ </div>
+ </div>
+<div class="container facts">
+  <h1 class="hfact">Facts</h1>
+  <div class="factsform">
+    <div class="row">
+      <div class="col-sm-4">
+    <div class="card mb-3" style="max-width: 620px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="peacock.jpg" alt="..." width="544px" height="350px" class=" img-responsive">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h6 class="card-title"><b>A Weekend Destination For Bird Lovers</b></h6>
+            <p class="card-text">If you think Allahabad has only rivers in the name of natural beauty. The region in and around Allahabad is home to several beautiful birds, ranging from endangered to rare species.</p>
+            <a class="http" class="http" href="https://www.nativeplanet.com/travel-guide/seven-interesting-facts-about-allahabad/articlecontent-pf25783-005294.html">know more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card mb-3" style="max-width: 620px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="sadhubaba2.jpg" alt="..." width="544px" height="350px" class=" img-responsive">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h6 class="card-title"><b>Was Called Prayag In The Vedic Period</b> </h6>     
+                  <p class="card-text">If you have ever been a student of Indian history, then you must have learned that this millenniums-old city was called Prayag before it was named Allahabad by the Mughal King Akbar in the 16th century.</p>       
+                  <a class="http" href="https://www.nativeplanet.com/travel-guide/seven-interesting-facts-about-allahabad/articlecontent-pf25783-005294.html">know more</a>
+
+                </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card mb-3" style="max-width: 620px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="sangam1.jpg" alt="..." width="544px" height="350px" class=" img-responsive" >
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h6 class="card-title"><b>Located At The Confluence Of Three Holy Rivers</b></h6>
+                        <p class="card-text">Allahabad is located at the confluence of the Ganga, Yamuna and Saraswati rivers. The place where these beautiful rivers meet is generally called Triveni Sangam.</p>
+                        <a class="http" href="https://www.nativeplanet.com/travel-guide/seven-interesting-facts-about-allahabad/articlecontent-pf25783-005294.html">know more</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div>
+  <div class="contact">
+    <div class="cf">
+      <div class ="fcontact">
+        <form class="contactform">
+          <div>
+            <label>Name</label>
+            <input type="text" name="email" class="form-controls">
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="text" name="email" class="form-controls">
+      </div>
+      <div>
+        <label>Message</label>
+        <input type="text" name="email" class="form-controls trans">
+    </div>
+        </form>
+  </div>
+</div>
+<div id="gotocontact">
+  <section id="footer" style="text-align: center;" >
+    <div class="contact">
+      <img src="instagram.svg" width="40px" height="40px" class="icon">
+      <img src="github.svg" width="40px" height="40px" class="icons1">
+      <img src="email.svg" width="40px" height="40px" class="icons2">
+      <img src="phone-call.svg" width="40px" height="40px" class="icons3">
+   
+    </div>
+  </section>
+  </div>
+</div>
+<footer>
+  <p style="text-align: center;">Prayagism @copy 2021</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Lateef&family=Lovers+Quarrel&family=Satisfy&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Lovers+Quarrel&family=Satisfy&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Seaweed+Script&family=Yesteryear&display=swap" rel="stylesheet">
+<title>Prayagism/hotel</title>
+</head>
+<style>
+  html{
+    overflow-x: hidden;
+  }
+
+.navbar-brand {
+    font-family: 'Homemade Apple', cursive;
+    transform: rotate(-7deg);
+    padding-bottom:0px;
+    margin-right: 0rem;
+     }
+      .navbar-nav{
+          padding-top: 1px;
+      }
+      .navbar{
+          min-height: 30px;
+      }
+      .navbar-toggler{
+          margin-top: 15px;
+      }
+      
+        .nav-link{
+            font-size: 18px;
+            margin-left: 20px;
+            margin-right: 50px;
+            font-family: 'Montserrat Subrayada', sans-serif;
+            }
+        
+           
+        .navbar-light .navbar-nav .active > .nav-link{
+          color: rgb(243, 243, 243);
+          transition: 0.3s;
+        }     
+        .navbar-light .navbar-nav .active > .nav-link:hover{
+          color: #ffc60b;
+        }
+        .navbar-light .navbar-nav .nav-link.active{
+          color:  rgb(243, 243, 243);
+          transition: 0.3s;
+        }
+        .navbar-light .navbar-nav .nav-link.active:hover{
+          color: #ffc60b;
+        }
+        #logo{
+            font-family: 'Homemade Apple', cursive;
+            transform: rotate(-5deg);
+            text-decoration: none;
+            font-size: 90px;
+            padding-bottom: -590px;
+            padding-top: 5px;
+           color: #baa91e;
+        }
+        .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: center;
+    list-style: none;
+    background-color: #212529;
+    background-clip: padding-box;
+    border: 1px solid #212529;
+    border-radius: 0.75rem;
+}
+
+        .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: lighter;
+    color: #ffc60b;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #f4f4f4;
+    text-decoration: none;
+    background-color:#212529 ;
+}
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #ffffffab;
+    border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    border-radius: .25rem;
+}
+.staticcarousel{
+  background-image: url(s3.jpg);
+  background-size: cover;
+  width: 100% !important;
+  height: 717px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  display: grid;
+align-content: center;
+justify-content: center;
+position: relative;
+}
+.box{
+  position: relative;
+  align-items: center;
+  width: 400px;
+  height: 717px;
+  background-color:#ffc60b ;
+  justify-content: center;
+  display: grid;
+}
+.life{
+  font-family: 'Pacifico', cursive;
+  font-size: 145px;
+}
+.food{
+  font-family: 'Changa', sans-serif;
+font-size: 34px;
+position: absolute;
+margin-top: 246px;
+margin-left: 89px;
+}
+.theme{
+ position: relative;
+}
+.item1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 225px;
+    border: 12px solid #ffc60b;
+        border-top-width: 12px;
+    border-radius: -0.75rem;
+    padding-bottom: 166px;
+    margin-right: -55px;
+    border-top-width: 0;
+}
+.item{
+  display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 225px;
+}
+.item2 {
+    color: aliceblue;
+    background-color: #ffc60b;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    height: 510px;
+}
+.w{
+  font-family: 'Pacifico', cursive; 
+  font-size: 80px;
+}
+.t{
+  font-family: 'Changa', sans-serif;
+  font-size: 35px;
+  text-transform: lowercase;
+}
+.p{
+  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'Cedarville Cursive', cursive;
+font-size: 45px;
+margin-left: 53px;
+margin-top: -50px;
+}
+.card {
+  position: relative;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-direction: column;
+flex-direction: column;
+min-width: 0;
+word-wrap: break-word;
+background-color: #fff;
+background-clip: border-box;
+border: 1px solid rgba(0,0,0,.125);
+box-shadow: 0px 3px 5px #8d5206;
+border-radius: 1.25rem;
+transition: 0.6s;
+}
+.card:hover{
+  background-image: linear-gradient(to right bottom,#efeb77,#f6af04 );
+  color: rgb(14, 14, 14);
+  transform: translateY(-50px);
+  cursor:pointer ;
+}
+.card-img, .card-img-bottom {
+    border-bottom-right-radius: calc(1.25rem - 1px);
+    border-bottom-left-radius: calc(1.25rem - 1px);
+}
+.card-img, .card-img-top {
+    border-top-left-radius: calc(1.25rem - 1px);
+    border-top-right-radius: calc(1.25rem - 1px);
+}
+.card-img {
+    height: 190px;
+    left: -16%;
+    position: relative;
+    top: 4%;
+    box-shadow: 4px 2px 3px rgba(138, 138, 138, 0.589);
+}
+@media(max-width:750px){
+  .card-img {
+    height: 210px;
+   position: static; 
+}
+}
+.card-title{
+  font-family: 'Seaweed Script', cursive;
+  font-size: 35px;
+}     
+.card-text{
+  font-family: "'Tajawal', sans-serif;"
+} 
+.container{
+  margin-top: 90px;
+}
+.shape{
+  background-color: #ffc60b;
+  background-attachment: scroll;
+  width: 50%;
+  height: 800px;
+}
+.bcolor{
+  background-image: url(bg.jpg);
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size:50%;
+}
+.bgcolor{
+  background-color: rgba(199, 199, 199, 0.664);
+}
+.footer{
+           margin-top: 20px;
+         }
+       
+</style>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<body>
+        <!--navbar-->
+          <!--navbar-->
+    <nav class="navbar navbar-light" style="text-align: center; justify-content: center;" >
+      <a class="navbar-brand" href="#" style="font-size: 26px;">Prayagism</a>
+    </nav>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"  id="text"  >Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" id="text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Explore
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="shopping.html">Shopping</a>
+              <a class="dropdown-item" href="tourist.html">Tourist place</a>
+              <a class="dropdown-item" href="hotel.html">Hotel</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" id="text" >Blog</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" id="text">About us</a>
+          </li>
+        </ul>
+     </div>
+    </nav>
+</body>
+<div class="staticcarousel">
+    <div class="box">
+      <h3 class="life">Life</h3>
+      <h6 class="food">Eat food for life</h6>
+    </div>
+</div>
+<div class="theme">
+  <div class="row">
+    <div class="col-sm-4">
+  <div class="item1">
+    <img src="fast-food.png" width="90px" height="90px" class="i1">
+    
+  </div>
+</div>
+<div class="col-sm-4 item">
+  <img src="diet.png" width="90px" height="90px" class="i2">
+</div>
+<div class="col-sm-4">
+  <div class="item2" style="color: aliceblue;">
+    <h1 class="w">Welcome</h1>
+    <h3 class="t">To</h3>
+    <h6 class="p">Prayagraj</h6>
+  </div>
+</div>
+</div>
+</div>
+<div class="container bcolor">
+ 
+    <div class="pcards">
+        <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+                <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="H1.jpeg" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Grand Continental</h5>
+                <p class="card-text">The  Grand Continental hotel is unique. It offers a good standard , is comfortably clean and central to all facilities in Allahabad. It also has a pool and spa.  The restaurant has a mixed menu of Indian , Asian and limited Western style dishes . All food is freshly prepare</p>
+                <p class="card-text"><small class="text-muted">13, Sardar Patel Marg, near PVR Cinemas, Civil Lines, Prayagraj, Uttar Pradesh 211001</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class=" tcards">
+          <div class="row">
+              <div class="col-sm-6">
+              <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="H2.jpeg" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Black and White</h5>
+              <p class="card-text">"Cool service at convenient price!"
+                "Awesome street food and very friendly behaviour of owner</p>
+              <p class="card-text"><small class="text-muted">Gangotri Nagar, Mirakhpur Kachhar, Uttar Pradesh 211008</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-sm-6"></div>
+          </div>
+          <div class="pcards">
+            <div class="row">
+                <div class="col-sm-6"></div>
+                <div class="col-sm-6">
+                    <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="H3.jpeg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Kanha Shyam</h5>
+                    <p class="card-text">It,s probably on of the best hotel in prayagraj.It is very well maintained and neat and clean.The services provided by the staff is too good.</p>
+                    <p class="card-text"><small class="text-muted">Civil Lines, Prayagraj, Uttar Pradesh 211001</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class=" tcards">
+              <div class="row">
+                  <div class="col-sm-6">
+                  <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="H4.jpeg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">The Roof Park</h5>
+                  <p class="card-text">It’s an amazing experience there.The place is extremely beautiful. Ambience is superb! People there are friendly. A good place to chill out with friends :) . Roof park is very beautiful. One can get very pretty clicks for background. The decorations are awesome and green . Backdrop of rook park is 3-D and feels giant! A must try, in all. </p>
+                  <p class="card-text"><small class="text-muted">27, 35, 3C, Tashkent Marg, Civil Lines, Prayagraj, Uttar Pradesh 211001</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-6"></div>
+              </div>
+              <div class="pcards">
+                <div class="row">
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6">
+                        <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="H5.jpeg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Hotel Regency</h5>
+                        <p class="card-text">Hotel is surrounded by greenery and located at Centre of city. Rooms are well furnished and spacious with nice view from room. Swimming pool is also available in the hotel. This swimming pool area is considerably big and gives vibe of elegant. Overall good and classy for a stay. </p>
+                        <p class="card-text"><small class="text-muted">16, Tashkent Marg, Near Patrika House, Civil Lines, Prayagraj, Uttar Pradesh 211001</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class=" tcards">
+                  <div class="row">
+                      <div class="col-sm-6">
+                      <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="H6.jpeg" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Cennet Hotel</h5>
+                      <p class="card-text">This hotel is very good .  I  have had an amazing experience over here. The place is awesome, highly recommend for  families and friends. The services provided by the staff is too good. I liked the roof top sitting arrangements and the taste of the food is awesome. Overall I loved this place .</p>
+                      <p class="card-text"><small class="text-muted">15D, 13/1, Tashkent Marg, next to Oberon Salon, Civil Lines, Prayagraj, Uttar Pradesh 211001</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="col-sm-6"></div>
+                  </div>
+                  <div class="pcards">
+                    <div class="row">
+                        <div class="col-sm-6"></div>
+                        <div class="col-sm-6">
+                            <div class="card mb-3" style="max-width: 540px;">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <img src="H7.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Scores The Games Cafe</h5>
+                            <p class="card-text">This place is really good at providing games and food services.Unique concept for Allahabad. Great way to spend some time with friends and hang out. Chilled out vibe and good ambience.
+                              Food is great and the place is easy on the pocket. The interior decoration is very awesome. A must vist cafe.</p>
+                            <p class="card-text"><small class="text-muted">138, C/30, Mahatma Gandhi Marg, Civil Lines, Prayagraj, Uttar Pradesh 211001</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class=" tcards">
+                      <div class="row">
+                          <div class="col-sm-6">
+                          <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <img src="H8.jpg".jpg" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">7th Heaven</h5>
+                          <p class="card-text">The word 'Heaven' which they have chosen in their Restaurant's name has enough meaning to express something cool.It's a nice place with a decent space. They have a very nice decor as well.  The food and beverages are great.Perfect place to spend evenings with friends or family..</p>
+                          <p class="card-text"><small class="text-muted">Aman complex, Mahatma Gandhi Marg, Civil Lines, Prayagraj, Uttar Pradesh 211001</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-sm-6"></div>
+                      </div>
+                      <div class="pcards">
+                        <div class="row">
+                            <div class="col-sm-6"></div>
+                            <div class="col-sm-6">
+                                <div class="card mb-3" style="max-width: 540px;">
+                          <div class="row no-gutters">
+                            <div class="col-md-4">
+                              <img src="H9.jpeg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Old School Cafe</h5>
+                                <p class="card-text"> A great rooftop ambience, cosy vibes and food is also quite decent. I ordered white sauce pasta which was overcooked, apart from that all other north-indian food was great.
+                                  Staff just needs to be reminded constantly for serving else they're very cooperative.Overall it is good.</p>
+                              <p class="card-text"><small class="text-muted">Civil Lines, Prayagraj, Uttar Pradesh 211001</small></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class=" tcards">
+                          <div class="row">
+                              <div class="col-sm-6">
+                              <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="H10.jpeg" class="card-img" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">USpfc</h5>
+                              <p class="card-text">Everything is so savory.The environment is also good and hygiene.Very well maintained and highly recommeneded.</p>
+                              <p class="card-text"><small class="text-muted">Sardar Patel Marg Kharbanda Complex, Civil Lines, Prayagraj, Uttar Pradesh 211001</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="col-sm-6"></div>
+                          </div>
+                          <div class="pcards">
+                            <div class="row">
+                                <div class="col-sm-6"></div>
+                                <div class="col-sm-6">
+                                    <div class="card mb-3" style="max-width: 540px;">
+                              <div class="row no-gutters">
+                                <div class="col-md-4">
+                                  <img src="H11.jpeg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Hotel Milan Palace</h5>
+                                    <p class="card-text">The Milan Palace The first and Foremost of Allahabad's 3 star hotel.The Hotel is a distinctive landmark.
+                                      Grandest Hotel with Corporate Conferences, Mega Events, Marriages and get-to gathers Allahabad's most magnificent Banquet venue</p>
+                                    <p class="card-text"><small class="text-muted">Govind Tower, 4/2, Stretchy Rd, Civil Lines, Prayagraj, Uttar Pradesh 211001</small></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            <div class=" tcards">
+                              <div class="row">
+                                  <div class="col-sm-6">
+                                  <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                              <div class="col-md-4">
+                                <img src="H12.jpeg" class="card-img" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">El Chico</h5>
+                                  <p class="card-text">Chico is a legendary restaurant in civil lines which started as a cafe and grew up to a restaurant. All the bakery items are delicious and freshly baked.EL Chico offers authentic Italian food and some other continental and fusion foods.</p>
+                                  <p class="card-text"><small class="text-muted">24, 28, Mahatma Gandhi Marg, Civil Lines, Prayagraj, Uttar Pradesh 211001</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="col-sm-6"></div>
+                              </div>
+                              <div class="pcards">
+                                <div class="row">
+                                    <div class="col-sm-6"></div>
+                                    <div class="col-sm-6">
+                                        <div class="card mb-3" style="max-width: 540px;">
+                                  <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                      <img src="H13.jpeg" class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Millennium Inn</h5>
+                                        <p class="card-text">A great place for functions or dine-in.The decoration of the banquet was good.Food served is simply great,beautiful ambiance
+                                          good staff,rooms were beautiful.All in all it was good.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">07F/06A, Hasting Road, Nyaya Marg, Near Hanuman Mandir Allahabad High Court, Uttar Pradesh 211001</small></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                <div class=" tcards">
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                      <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                  <div class="col-md-4">
+                                    <img src="H14.jpeg" class="card-img" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Eden Cafe</h5>
+                                      <p class="card-text">Eden is a very peaceful place with lovely architecture and designs.Food is just awesome both taste and the way
+                                        they serve is appriciable.Ambience is vey cozy and they also have rooftop garden.Overall this is a must visit place in prayagraj.
+                                      </p>
+                                      <p class="card-text"><small class="text-muted">49A, Mahatma Gandhi Marg, Civil Lines, Prayagraj, Uttar Pradesh 211001</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+                              <div class="col-sm-6"></div>
+                                  </div>
+      </div>
+      </div>
+     </div></div></div></div></div></div>
+     <footer style="margin-top: 25px;">
+        <p style="text-align: center;">Prayagism @copy 2021</p>
+      </footer>
+  </body>
+   
+</html>
